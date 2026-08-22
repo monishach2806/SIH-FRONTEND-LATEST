@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Admin Login | Srijian Bank</title>
+	<link rel="stylesheet" href="adLOG.css">
+</head>
+<body>
+	<main class="admin-login-page">
+		<section class="admin-login-intro" aria-labelledby="intro-title">
+			<a class="admin-login-brand" href="startingPage.html"><img src="logo.jpeg" alt="Srijian Bank logo"><span><strong>Srijian Bank</strong><small>Smart banking, made simple</small></span></a>
+			<div class="intro-copy"><span class="eyebrow">Secure operations</span><h1 id="intro-title">Keep the bank moving forward.</h1><p>Your administrative workspace for customer care, approvals, reports, and everyday banking operations.</p></div>
+			<div class="intro-footer"><span class="status-dot"></span><span>Protected admin access</span><span class="intro-divider"></span><span>System online</span></div>
+		</section>
+
+		<section class="admin-login-card" aria-labelledby="login-title">
+			<div class="card-heading"><span class="eyebrow">Administrator portal</span><h2 id="login-title">Welcome back.</h2><p>Sign in to access your dashboard.</p></div>
+			<form class="admin-login-form" action="admin.html" method="get">
+				<div class="form-field"><label for="admin-id">Admin ID</label><input id="admin-id" name="admin-id" type="text" placeholder="Enter your admin ID" autocomplete="username" required></div>
+				<div class="form-field"><div class="label-line"><label for="admin-password">Password</label><a href="#reset">Forgot password?</a></div><input id="admin-password" name="password" type="password" placeholder="Enter your password" autocomplete="current-password" required></div>				<button type="submit">Sign in securely <span>↗</span></button>
+            </form>
+			<a class="back-home" href="startingPage.html">Back to Srijian Bank home</a>
+		</section>
+	</main>
+</body>
+</html>
