@@ -948,3 +948,88 @@ a:hover {
         transition: none !important; 
     }
 }
+.ai-response {
+    margin-top: 15px;
+    width: 100%;
+    box-sizing: border-box;
+
+    padding: 14px;
+
+    background: #ffffff;
+    color: #071c3b;
+
+    border: 1px solid #d9e7f3;
+    border-radius: 12px;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+
+    max-height: 280px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.ai-assistance input[aria-label="Ask AI assistance"] {
+    color: #071c3b !important;
+    background: #ffffff !important;
+    pointer-events: auto !important;
+    position: relative;
+    z-index: 10;
+}
+
+.ai-assistance input[aria-label="Ask AI assistance"]::placeholder {
+    color: #6b7f9d !important;
+    opacity: 1;
+}
+.compact-ai-input {
+    position: relative !important;
+    z-index: 10000 !important;
+}
+
+.compact-ai-input input {
+    display: block !important;
+    width: auto !important;
+    height: 100% !important;
+    flex: 1 1 auto !important;
+
+    pointer-events: auto !important;
+    user-select: text !important;
+
+    color: #071c3b !important;
+    background: transparent !important;
+    opacity: 1 !important;
+}
+
+.compact-ai-input input::placeholder {
+    color: #60789f !important;
+    opacity: 1 !important;
+}
+.ai-response {
+    margin-top: 12px;
+    max-height: 350px;
+    overflow-y: auto;
+    padding: 12px;
+    background: white;
+    color: #071c3b;
+    border-radius: 10px;
+    line-height: 1.5;
+    font-size: 13px;
+}
+
+.ai-response h3 {
+    margin: 10px 0 6px;
+    color: #163d70;
+}
+
+.ai-response strong {
+    color: #163d70;
+}
+
+.ai-response hr {
+    border: 0;
+    border-top: 1px solid #ddd;
+    margin: 10px 0;
+}

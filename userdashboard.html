@@ -1,522 +1,2179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
     <title>Dashboard | Srijian Bank</title>
-    <link rel="stylesheet" href="userdashboard.css">
+
+    <link
+        rel="stylesheet"
+        href="userdashboard.css"
+    >
+
 </head>
+
+
 <body>
 
+
     <!-- ===== TOP HEADER ===== -->
+
     <header class="dash-header">
+
         <div class="dash-header-inner">
-            <a href="startingPage.html" class="dash-logo-link" aria-label="Srijian Bank Home">
-                <img class="dash-logo" src="logo.jpeg" alt="Srijian Bank Logo">
+
+            <a
+                href="startingPage.html"
+                class="dash-logo-link"
+                aria-label="Srijian Bank Home"
+            >
+
+                <img
+                    class="dash-logo"
+                    src="logo.jpeg"
+                    alt="Srijian Bank Logo"
+                >
+
             </a>
+
+
             <div class="dash-header-user">
-                <span class="dash-crn">CRN: <strong>8839201</strong></span>
-                <span class="dash-welcome">Welcome, <strong>Arjun Mehta</strong></span>
+
+                <span class="dash-crn">
+                    CRN:
+                    <strong>8839201</strong>
+                </span>
+
+                <span class="dash-welcome">
+                    Welcome,
+                    <strong>Arjun Mehta</strong>
+                </span>
+
             </div>
-            <nav class="dash-header-actions" aria-label="User actions">
-                <a href="#" class="dash-header-link">Profile</a>
-                <a href="#" class="dash-header-link">Change Password</a>
-                <a href="#" class="dash-header-link">Security</a>
-                <a href="startingPage.html" class="dash-header-link">Logout</a>
-                <a href="#" class="dash-header-link">Help</a>
+
+
+            <nav
+                class="dash-header-actions"
+                aria-label="User actions"
+            >
+
+                <a
+                    href="#"
+                    class="dash-header-link"
+                >
+                    Profile
+                </a>
+
+
+                <!-- KYC -->
+
+                <a
+                    href="kyc.html"
+                    class="dash-header-link"
+                >
+                    KYC
+                </a>
+
+
+                <a
+                    href="#"
+                    class="dash-header-link"
+                >
+                    Change Password
+                </a>
+
+
+                <a
+                    href="#"
+                    class="dash-header-link"
+                >
+                    Security
+                </a>
+
+
+                <a
+                    href="startingPage.html"
+                    class="dash-header-link"
+                >
+                    Logout
+                </a>
+
+
+                <a
+                    href="#"
+                    class="dash-header-link"
+                >
+                    Help
+                </a>
+
             </nav>
+
         </div>
+
     </header>
 
+
     <!-- ===== PRIMARY NAVIGATION ===== -->
-    <nav class="dash-nav" aria-label="Primary navigation">
+
+    <nav
+        class="dash-nav"
+        aria-label="Primary navigation"
+    >
+
         <div class="dash-nav-inner">
-            <a href="#" class="dash-nav-item active-nav">Home</a>
-            <a href="#" class="dash-nav-item">Banking</a>
-            <a href="card.html" class="dash-nav-item">Credit Card</a>
-            <a href="#" class="dash-nav-item">Insurance</a>
-            <a href="card.html" class="dash-nav-item">Debit Card</a>
-            <a href="#" class="dash-nav-item">BillPay / Recharge</a>
+
+
+            <a
+                href="#"
+                class="dash-nav-item active-nav"
+            >
+                Home
+            </a>
+
+
+            <a
+                href="#"
+                class="dash-nav-item"
+            >
+                Banking
+            </a>
+
+
+            <a
+                href="card.html"
+                class="dash-nav-item"
+            >
+                Credit Card
+            </a>
+
+
+            <a
+                href="#"
+                class="dash-nav-item"
+            >
+                Insurance
+            </a>
+
+
+            <a
+                href="card.html"
+                class="dash-nav-item"
+            >
+                Debit Card
+            </a>
+
+
+            <a
+                href="#"
+                class="dash-nav-item"
+            >
+                BillPay / Recharge
+            </a>
+
 
             <!-- CSS-only dropdown -->
-            <div class="dash-nav-dropdown" tabindex="0">
-                <span class="dash-nav-item dropdown-trigger">More
-                    <svg class="dropdown-arrow" viewBox="0 0 12 8" aria-hidden="true"><path d="M1 1l5 5 5-5" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+
+            <div
+                class="dash-nav-dropdown"
+                tabindex="0"
+            >
+
+                <span
+                    class="dash-nav-item dropdown-trigger"
+                >
+
+                    More
+
+                    <svg
+                        class="dropdown-arrow"
+                        viewBox="0 0 12 8"
+                        aria-hidden="true"
+                    >
+
+                        <path
+                            d="M1 1l5 5 5-5"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                            fill="none"
+                        />
+
+                    </svg>
+
                 </span>
-                <div class="dropdown-panel" role="menu">
-                    <a href="#" class="dropdown-link" role="menuitem">ASBA</a>
-                    <a href="#" class="dropdown-link" role="menuitem">e-Tax</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Statement</a>
-                    <a href="#" class="dropdown-link" role="menuitem">NPS</a>
-                    <a href="investement.html" class="dropdown-link" role="menuitem">Investments</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Demat</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Money Watch</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Netcard</a>
-                    <a href="#" class="dropdown-link" role="menuitem">eStore</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Remittances</a>
-                    <a href="#" class="dropdown-link" role="menuitem">e-Invoice</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Travel Card</a>
-                    <a href="#" class="dropdown-link" role="menuitem">Apply Now</a>
-                    <a href="#" class="dropdown-link" role="menuitem">e-Collection</a>
+
+
+                <div
+                    class="dropdown-panel"
+                    role="menu"
+                >
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        ASBA
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        e-Tax
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Statement
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        NPS
+                    </a>
+
+
+                    <a
+                        href="investement.html"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Investments
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Demat
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Money Watch
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Netcard
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        eStore
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Remittances
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        e-Invoice
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Travel Card
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        Apply Now
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="dropdown-link"
+                        role="menuitem"
+                    >
+                        e-Collection
+                    </a>
+
                 </div>
+
             </div>
 
-            <a href="#" class="dash-nav-item nav-apply">Apply Now</a>
-            <a href="#" class="dash-nav-item nav-support">
-                <svg viewBox="0 0 24 24" aria-hidden="true" class="support-icon"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M12 8v4m0 4h.01" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
-                Get Support
+
+            <a
+                href="#"
+                class="dash-nav-item nav-apply"
+            >
+                Apply Now
             </a>
+
+
+            <a
+                href="#"
+                class="dash-nav-item nav-support"
+            >
+
+                <svg
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
+                    class="support-icon"
+                >
+
+                    <circle
+                        cx="12"
+                        cy="12"
+                        r="10"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        fill="none"
+                    />
+
+                    <path
+                        d="M12 8v4m0 4h.01"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                        fill="none"
+                    />
+
+                </svg>
+
+                Get Support
+
+            </a>
+
         </div>
+
     </nav>
 
+
     <!-- ===== MAIN DASHBOARD ===== -->
+
     <main class="dash-main">
 
+
         <!-- Financial Summary Row -->
-        <section class="finance-summary" aria-labelledby="finance-summary-title">
-            <h2 id="finance-summary-title" class="sr-only">Financial Summary</h2>
 
-            <article class="summary-card summary-assets">
+        <section
+            class="finance-summary"
+            aria-labelledby="finance-summary-title"
+        >
+
+            <h2
+                id="finance-summary-title"
+                class="sr-only"
+            >
+                Financial Summary
+            </h2>
+
+
+            <article
+                class="summary-card summary-assets"
+            >
+
                 <div class="summary-card-top">
-                    <span class="summary-label">Your Assets
-                        <svg viewBox="0 0 16 16" aria-hidden="true" class="summary-icon-plus"><path d="M8 3v10M3 8h10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+
+                    <span class="summary-label">
+
+                        Your Assets
+
+                        <svg
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                            class="summary-icon-plus"
+                        >
+
+                            <path
+                                d="M8 3v10M3 8h10"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                fill="none"
+                            />
+
+                        </svg>
+
                     </span>
-                    <span class="summary-sub">What you own</span>
-                </div>
-                <span class="summary-amount assets-amount">₹5,42,800.00</span>
-            </article>
 
-            <article class="summary-card summary-liabilities">
-                <div class="summary-card-top">
-                    <span class="summary-label">Your Liabilities
-                        <svg viewBox="0 0 16 16" aria-hidden="true" class="summary-icon-minus"><path d="M3 8h10" stroke="currentColor" stroke-width="1.5" fill="none"/></svg>
+
+                    <span class="summary-sub">
+                        What you own
                     </span>
-                    <span class="summary-sub">What you owe</span>
+
                 </div>
-                <span class="summary-amount liabilities-amount">₹45,200.00</span>
+
+
+                <span class="summary-amount assets-amount">
+                    ₹5,42,800.00
+                </span>
+
             </article>
 
-            <article class="summary-card summary-overview">
+
+            <article
+                class="summary-card summary-liabilities"
+            >
+
                 <div class="summary-card-top">
-                    <span class="summary-label">Money Watch</span>
-                    <span class="summary-sub">What you spent</span>
+
+                    <span class="summary-label">
+
+                        Your Liabilities
+
+                        <svg
+                            viewBox="0 0 16 16"
+                            aria-hidden="true"
+                            class="summary-icon-minus"
+                        >
+
+                            <path
+                                d="M3 8h10"
+                                stroke="currentColor"
+                                stroke-width="1.5"
+                                fill="none"
+                            />
+
+                        </svg>
+
+                    </span>
+
+
+                    <span class="summary-sub">
+                        What you owe
+                    </span>
+
                 </div>
-                <span class="summary-amount overview-amount">₹4,97,600.00</span>
+
+
+                <span class="summary-amount liabilities-amount">
+                    ₹45,200.00
+                </span>
+
             </article>
+
+
+            <article
+                class="summary-card summary-overview"
+            >
+
+                <div class="summary-card-top">
+
+                    <span class="summary-label">
+                        Money Watch
+                    </span>
+
+
+                    <span class="summary-sub">
+                        What you spent
+                    </span>
+
+                </div>
+
+
+                <span class="summary-amount overview-amount">
+                    ₹4,97,600.00
+                </span>
+
+            </article>
+
         </section>
 
-        <!-- Hidden radio buttons for CSS-only tab switching -->
-        <input type="radio" name="acc-tabs" id="tab-savings" class="tab-radio" checked>
-        <input type="radio" name="acc-tabs" id="tab-current" class="tab-radio">
-        <input type="radio" name="acc-tabs" id="tab-overdraft" class="tab-radio">
 
-        <!-- Dashboard 2-column layout with Left Sidebar -->
+        <!-- Hidden radio buttons -->
+
+        <input
+            type="radio"
+            name="acc-tabs"
+            id="tab-savings"
+            class="tab-radio"
+            checked
+        >
+
+        <input
+            type="radio"
+            name="acc-tabs"
+            id="tab-current"
+            class="tab-radio"
+        >
+
+        <input
+            type="radio"
+            name="acc-tabs"
+            id="tab-overdraft"
+            class="tab-radio"
+        >
+
+
+        <!-- Dashboard 2-column layout -->
+
         <div class="dash-grid">
 
-            <!-- LEFT SIDEBAR: Accounts Navigation + Notifications + Specially For You -->
-            <aside class="left-sidebar" aria-label="Sidebar details">
 
-                <!-- Account Navigation Panel Card -->
-                <div class="account-sidebar" aria-labelledby="sidebar-title">
+            <!-- LEFT SIDEBAR -->
+
+            <aside
+                class="left-sidebar"
+                aria-label="Sidebar details"
+            >
+
+
+                <!-- Accounts -->
+
+                <div
+                    class="account-sidebar"
+                    aria-labelledby="sidebar-title"
+                >
+
                     <div class="account-sidebar-header">
-                        <h3 id="sidebar-title" class="sidebar-heading">Accounts</h3>
+
+                        <h3
+                            id="sidebar-title"
+                            class="sidebar-heading"
+                        >
+                            Accounts
+                        </h3>
+
                     </div>
-                    <nav class="sidebar-nav" aria-label="Account categories">
-                        <a href="#" class="sidebar-link active-sidebar">
-                            <span class="sidebar-link-label">Banking Accounts</span>
-                            <span class="sidebar-link-balance">₹4,82,600.00</span>
+
+
+                    <nav
+                        class="sidebar-nav"
+                        aria-label="Account categories"
+                    >
+
+                        <a
+                            href="#"
+                            class="sidebar-link active-sidebar"
+                        >
+
+                            <span class="sidebar-link-label">
+                                Banking Accounts
+                            </span>
+
+                            <span class="sidebar-link-balance">
+                                ₹4,82,600.00
+                            </span>
+
                         </a>
-                        <a href="#" class="sidebar-link">
-                            <span class="sidebar-link-label">Fixed / Recurring Deposit</span>
-                            <span class="sidebar-link-balance">₹50,000.00</span>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-link"
+                        >
+
+                            <span class="sidebar-link-label">
+                                Fixed / Recurring Deposit
+                            </span>
+
+                            <span class="sidebar-link-balance">
+                                ₹50,000.00
+                            </span>
+
                         </a>
-                        <a href="#" class="sidebar-link">
-                            <span class="sidebar-link-label">Investment Accounts</span>
-                            <span class="sidebar-link-balance">₹10,200.00</span>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-link"
+                        >
+
+                            <span class="sidebar-link-label">
+                                Investment Accounts
+                            </span>
+
+                            <span class="sidebar-link-balance">
+                                ₹10,200.00
+                            </span>
+
                         </a>
-                        <a href="#" class="sidebar-link">
-                            <span class="sidebar-link-label">Demat Accounts</span>
-                            <span class="sidebar-link-balance">₹0.00</span>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-link"
+                        >
+
+                            <span class="sidebar-link-label">
+                                Demat Accounts
+                            </span>
+
+                            <span class="sidebar-link-balance">
+                                ₹0.00
+                            </span>
+
                         </a>
-                        <a href="#" class="sidebar-link">
-                            <span class="sidebar-link-label">National Pension Scheme</span>
-                            <span class="sidebar-link-balance">₹0.00</span>
+
+
+                        <a
+                            href="#"
+                            class="sidebar-link"
+                        >
+
+                            <span class="sidebar-link-label">
+                                National Pension Scheme
+                            </span>
+
+                            <span class="sidebar-link-balance">
+                                ₹0.00
+                            </span>
+
                         </a>
+
                     </nav>
+
                 </div>
 
-                <!-- Notifications Panel Card -->
+
+                <!-- Notifications -->
+
                 <div class="notifications-panel">
+
                     <div class="notifications-header">
-                        <h3 id="notifications-title">Notifications</h3>
-                        <a href="#" class="view-all-link">View All</a>
+
+                        <h3 id="notifications-title">
+                            Notifications
+                        </h3>
+
+                        <a
+                            href="#"
+                            class="view-all-link"
+                        >
+                            View All
+                        </a>
+
                     </div>
+
+
                     <div class="notifications-list">
-                        <article class="notification-item unread">
-                            <span class="notification-dot" aria-hidden="true"></span>
+
+                        <article
+                            class="notification-item unread"
+                        >
+
+                            <span
+                                class="notification-dot"
+                                aria-hidden="true"
+                            ></span>
+
                             <div class="notification-body">
-                                <strong>Annual Combined Statement</strong>
-                                <p>You can now instantly download your Annual combined statement (includes bank account & deposit statement, Interest & Balance certificate) for the last financial year.</p>
-                                <a href="#" class="notification-action">Click here to download</a>
+
+                                <strong>
+                                    Annual Combined Statement
+                                </strong>
+
+                                <p>
+                                    You can now instantly download your Annual combined statement
+                                    (includes bank account & deposit statement, Interest & Balance
+                                    certificate) for the last financial year.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="notification-action"
+                                >
+                                    Click here to download
+                                </a>
+
                             </div>
+
                         </article>
-                        <article class="notification-item unread">
-                            <span class="notification-dot" aria-hidden="true"></span>
+
+
+                        <article
+                            class="notification-item unread"
+                        >
+
+                            <span
+                                class="notification-dot"
+                                aria-hidden="true"
+                            ></span>
+
                             <div class="notification-body">
-                                <strong>Beneficiary Registration</strong>
-                                <p>We have simplified the Beneficiary registration process to improve your fund transfer experience.</p>
-                                <a href="#" class="notification-action">Click here for details</a>
+
+                                <strong>
+                                    Beneficiary Registration
+                                </strong>
+
+                                <p>
+                                    We have simplified the Beneficiary registration process to
+                                    improve your fund transfer experience.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="notification-action"
+                                >
+                                    Click here for details
+                                </a>
+
                             </div>
+
                         </article>
+
+
                         <article class="notification-item">
+
                             <div class="notification-body">
-                                <strong>Security Alert</strong>
-                                <p>Please update your registered mobile number if changed recently to continue receiving OTP alerts.</p>
+
+                                <strong>
+                                    Security Alert
+                                </strong>
+
+                                <p>
+                                    Please update your registered mobile number if changed
+                                    recently to continue receiving OTP alerts.
+                                </p>
+
                             </div>
+
                         </article>
+
+
                         <article class="notification-item">
+
                             <div class="notification-body">
-                                <strong>UPI Mandate</strong>
-                                <p>You can now set up AutoPay mandates through UPI for recurring payments.</p>
-                                <a href="#" class="notification-action">Learn more</a>
+
+                                <strong>
+                                    UPI Mandate
+                                </strong>
+
+                                <p>
+                                    You can now set up AutoPay mandates through UPI for recurring
+                                    payments.
+                                </p>
+
+                                <a
+                                    href="#"
+                                    class="notification-action"
+                                >
+                                    Learn more
+                                </a>
+
                             </div>
+
                         </article>
+
                     </div>
+
                 </div>
 
-                <!-- Specially For You Panel Card -->
+
+                <!-- Specially For You -->
+
                 <div class="promo-panel">
+
                     <div class="promo-header">
-                        <h3>Specially For You</h3>
-                        <a href="#" class="view-all-link">More</a>
+
+                        <h3>
+                            Specially For You
+                        </h3>
+
+                        <a
+                            href="#"
+                            class="view-all-link"
+                        >
+                            More
+                        </a>
+
                     </div>
+
+
                     <div class="promo-list">
+
                         <article class="promo-card promo-deposit">
-                            <strong>Term Deposit</strong>
-                            <p>Earn up to 7.5% p.a. on deposits.</p>
-                            <a href="#" class="promo-action">Click here for details</a>
+
+                            <strong>
+                                Term Deposit
+                            </strong>
+
+                            <p>
+                                Earn up to 7.5% p.a. on deposits.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="promo-action"
+                            >
+                                Click here for details
+                            </a>
+
                         </article>
+
 
                         <article class="promo-card promo-billpay">
-                            <strong>BillPay</strong>
-                            <p>Pay utility bills, recharge & more instantly.</p>
-                            <a href="#" class="promo-action">Click here for details</a>
+
+                            <strong>
+                                BillPay
+                            </strong>
+
+                            <p>
+                                Pay utility bills, recharge & more instantly.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="promo-action"
+                            >
+                                Click here for details
+                            </a>
+
                         </article>
+
 
                         <article class="promo-card promo-card-upgrade">
-                            <strong>Card Upgrade</strong>
-                            <p>Upgrade your debit card for enhanced benefits.</p>
-                            <a href="#" class="promo-action">Click here for details</a>
+
+                            <strong>
+                                Card Upgrade
+                            </strong>
+
+                            <p>
+                                Upgrade your debit card for enhanced benefits.
+                            </p>
+
+                            <a
+                                href="#"
+                                class="promo-action"
+                            >
+                                Click here for details
+                            </a>
+
                         </article>
+
                     </div>
+
                 </div>
 
-                <!-- AI Assistance Card (Copied from Homepage) -->
+
+                <!-- AI Assistance -->
+
                 <div class="compact-ai-column">
-                    <aside class="compact-ai-box" aria-labelledby="compact-ai-title">
+
+                    <aside
+                        class="compact-ai-box"
+                        aria-labelledby="compact-ai-title"
+                    >
+
                         <div class="compact-ai-heading">
-                            <h2 id="compact-ai-title">AI Assistance</h2>
+
+                            <h2 id="compact-ai-title">
+                                AI Assistance
+                            </h2>
+
                         </div>
+
+
                         <div class="compact-ai-input">
-                            <input type="text" aria-label="Ask AI assistance" placeholder="Ask a question">
-                            <button type="button" aria-label="Send question">→</button>
+
+                            <input
+                                type="text"
+                                aria-label="Ask AI assistance"
+                                placeholder="Ask a question"
+                            >
+
+                            <button
+                                type="button"
+                                aria-label="Send question"
+                            >
+                                →
+                            </button>
+
                         </div>
+
+
+                        <div
+                            id="ai-response"
+                            class="ai-response"
+                        ></div>
+
                     </aside>
+
+
                     <p class="compact-ai-copy">
-                        Get quick, simple answers about your account, cards, and everyday banking.<br><br>
-                        Our AI assistant is here to help you with your banking needs, anytime, anywhere.
+
+                        Get quick, simple answers about your account,
+                        cards, and everyday banking.
+
+                        <br><br>
+
+                        Our AI assistant is here to help you with your
+                        banking needs, anytime, anywhere.
+
                     </p>
+
                 </div>
+
             </aside>
 
-            <!-- RIGHT AREA: Main Content -->
+
+            <!-- RIGHT AREA -->
+
             <div class="main-column">
 
-                <!-- Account Overview Card -->
-                <section class="account-overview" aria-labelledby="overview-title">
-                    <h3 id="overview-title" class="sr-only">Account Overview</h3>
 
-                    <!-- Account type tabs -->
-                    <div class="account-tabs" role="tablist" aria-label="Account types">
-                        <label for="tab-savings" class="account-tab tab-btn-savings" role="tab" aria-selected="true">Savings</label>
-                        <label for="tab-current" class="account-tab tab-btn-current" role="tab" aria-selected="false">Current</label>
-                        <label for="tab-overdraft" class="account-tab tab-btn-overdraft" role="tab" aria-selected="false">Overdraft</label>
+                <!-- Account Overview -->
+
+                <section
+                    class="account-overview"
+                    aria-labelledby="overview-title"
+                >
+
+                    <h3
+                        id="overview-title"
+                        class="sr-only"
+                    >
+                        Account Overview
+                    </h3>
+
+
+                    <!-- Tabs -->
+
+                    <div
+                        class="account-tabs"
+                        role="tablist"
+                        aria-label="Account types"
+                    >
+
+                        <label
+                            for="tab-savings"
+                            class="account-tab tab-btn-savings"
+                            role="tab"
+                            aria-selected="true"
+                        >
+                            Savings
+                        </label>
+
+
+                        <label
+                            for="tab-current"
+                            class="account-tab tab-btn-current"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            Current
+                        </label>
+
+
+                        <label
+                            for="tab-overdraft"
+                            class="account-tab tab-btn-overdraft"
+                            role="tab"
+                            aria-selected="false"
+                        >
+                            Overdraft
+                        </label>
+
                     </div>
 
-                    <!-- Savings Accounts Table -->
+
+                    <!-- Savings -->
+
                     <div class="tab-content tab-content-savings">
-                    <div class="account-table-wrap">
-                        <table class="account-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="col-name">Account</th>
-                                    <th scope="col" class="col-number">Account No.</th>
-                                    <th scope="col" class="col-available">Available (₹)</th>
-                                    <th scope="col" class="col-current">Current (₹)</th>
-                                    <th scope="col" class="col-actions">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Savings Account</span>
-                                        <span class="account-type-badge">Primary</span>
-                                    </td>
-                                    <td class="col-number">**** 4821</td>
-                                    <td class="col-available">₹3,28,450.00</td>
-                                    <td class="col-current">₹3,28,450.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 4821">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 4821">Transfer</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Savings Account</span>
-                                        <span class="account-type-badge secondary-badge">Joint</span>
-                                    </td>
-                                    <td class="col-number">**** 7390</td>
-                                    <td class="col-available">₹1,54,150.00</td>
-                                    <td class="col-current">₹1,54,150.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 7390">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 7390">Transfer</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                        <div class="account-table-wrap">
+
+                            <table class="account-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th
+                                            scope="col"
+                                            class="col-name"
+                                        >
+                                            Account
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-number"
+                                        >
+                                            Account No.
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-available"
+                                        >
+                                            Available (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-current"
+                                        >
+                                            Current (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-actions"
+                                        >
+                                            Actions
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Savings Account
+                                            </span>
+
+                                            <span class="account-type-badge">
+                                                Primary
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 4821
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹3,28,450.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹3,28,450.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Savings Account
+                                            </span>
+
+                                            <span class="account-type-badge secondary-badge">
+                                                Joint
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 7390
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹1,54,150.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹1,54,150.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
                     </div>
 
-                    <!-- Current Accounts Table -->
+
+                    <!-- Current -->
+
                     <div class="tab-content tab-content-current">
-                    <div class="account-table-wrap">
-                        <table class="account-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="col-name">Account</th>
-                                    <th scope="col" class="col-number">Account No.</th>
-                                    <th scope="col" class="col-available">Available (₹)</th>
-                                    <th scope="col" class="col-current">Current (₹)</th>
-                                    <th scope="col" class="col-actions">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Current Account</span>
-                                        <span class="account-type-badge">Business</span>
-                                    </td>
-                                    <td class="col-number">**** 8821</td>
-                                    <td class="col-available">₹5,40,000.00</td>
-                                    <td class="col-current">₹5,40,000.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 8821">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 8821">Transfer</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Current Account</span>
-                                        <span class="account-type-badge secondary-badge">Corporate</span>
-                                    </td>
-                                    <td class="col-number">**** 1104</td>
-                                    <td class="col-available">₹2,15,000.00</td>
-                                    <td class="col-current">₹2,15,000.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 1104">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 1104">Transfer</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                        <div class="account-table-wrap">
+
+                            <table class="account-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th
+                                            scope="col"
+                                            class="col-name"
+                                        >
+                                            Account
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-number"
+                                        >
+                                            Account No.
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-available"
+                                        >
+                                            Available (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-current"
+                                        >
+                                            Current (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-actions"
+                                        >
+                                            Actions
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Current Account
+                                            </span>
+
+                                            <span class="account-type-badge">
+                                                Business
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 8821
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹5,40,000.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹5,40,000.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Current Account
+                                            </span>
+
+                                            <span class="account-type-badge secondary-badge">
+                                                Corporate
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 1104
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹2,15,000.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹2,15,000.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
                     </div>
 
-                    <!-- Overdraft Accounts Table -->
+
+                    <!-- Overdraft -->
+
                     <div class="tab-content tab-content-overdraft">
-                    <div class="account-table-wrap">
-                        <table class="account-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col" class="col-name">Account</th>
-                                    <th scope="col" class="col-number">Account No.</th>
-                                    <th scope="col" class="col-available">Available Limit (₹)</th>
-                                    <th scope="col" class="col-current">Utilized (₹)</th>
-                                    <th scope="col" class="col-actions">Actions</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Overdraft Account</span>
-                                        <span class="account-type-badge">Secured</span>
-                                    </td>
-                                    <td class="col-number">**** 3314</td>
-                                    <td class="col-available">₹3,55,000.00</td>
-                                    <td class="col-current">₹1,45,000.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 3314">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 3314">Transfer</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="col-name">
-                                        <span class="account-name">Overdraft Account</span>
-                                        <span class="account-type-badge secondary-badge">Clean</span>
-                                    </td>
-                                    <td class="col-number">**** 7790</td>
-                                    <td class="col-available">₹2,00,000.00</td>
-                                    <td class="col-current">₹0.00</td>
-                                    <td class="col-actions">
-                                        <a href="#" class="action-link" aria-label="View statement for account ending 7790">Statement</a>
-                                        <a href="#" class="action-link" aria-label="Transfer from account ending 7790">Transfer</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+
+                        <div class="account-table-wrap">
+
+                            <table class="account-table">
+
+                                <thead>
+
+                                    <tr>
+
+                                        <th
+                                            scope="col"
+                                            class="col-name"
+                                        >
+                                            Account
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-number"
+                                        >
+                                            Account No.
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-available"
+                                        >
+                                            Available Limit (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-current"
+                                        >
+                                            Utilized (₹)
+                                        </th>
+
+                                        <th
+                                            scope="col"
+                                            class="col-actions"
+                                        >
+                                            Actions
+                                        </th>
+
+                                    </tr>
+
+                                </thead>
+
+
+                                <tbody>
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Overdraft Account
+                                            </span>
+
+                                            <span class="account-type-badge">
+                                                Secured
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 3314
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹3,55,000.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹1,45,000.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+
+                                    <tr>
+
+                                        <td class="col-name">
+
+                                            <span class="account-name">
+                                                Overdraft Account
+                                            </span>
+
+                                            <span class="account-type-badge secondary-badge">
+                                                Clean
+                                            </span>
+
+                                        </td>
+
+
+                                        <td class="col-number">
+                                            **** 7790
+                                        </td>
+
+
+                                        <td class="col-available">
+                                            ₹2,00,000.00
+                                        </td>
+
+
+                                        <td class="col-current">
+                                            ₹0.00
+                                        </td>
+
+
+                                        <td class="col-actions">
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Statement
+                                            </a>
+
+                                            <a
+                                                href="#"
+                                                class="action-link"
+                                            >
+                                                Transfer
+                                            </a>
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+
+                            </table>
+
+                        </div>
+
                     </div>
 
-                    <!-- Total rows -->
+
+                    <!-- Totals -->
+
                     <div class="account-total total-savings">
-                        <span>Total Savings</span>
-                        <span class="total-amount">₹4,82,600.00</span>
+
+                        <span>
+                            Total Savings
+                        </span>
+
+                        <span class="total-amount">
+                            ₹4,82,600.00
+                        </span>
+
                     </div>
+
+
                     <div class="account-total total-current">
-                        <span>Total Current</span>
-                        <span class="total-amount">₹7,55,000.00</span>
+
+                        <span>
+                            Total Current
+                        </span>
+
+                        <span class="total-amount">
+                            ₹7,55,000.00
+                        </span>
+
                     </div>
+
+
                     <div class="account-total total-overdraft">
-                        <span>Total Overdraft Limit</span>
-                        <span class="total-amount">₹7,00,000.00</span>
+
+                        <span>
+                            Total Overdraft Limit
+                        </span>
+
+                        <span class="total-amount">
+                            ₹7,00,000.00
+                        </span>
+
                     </div>
+
                 </section>
 
-                <!-- Quick Services Card (Now underneath Account Summary) -->
-                <section class="quick-services-wrap" aria-labelledby="quick-services-title">
+
+                <!-- Quick Services -->
+
+                <section
+                    class="quick-services-wrap"
+                    aria-labelledby="quick-services-title"
+                >
+
                     <div class="quick-services-header">
-                        <h3 id="quick-services-title">Quick Services</h3>
+
+                        <h3 id="quick-services-title">
+                            Quick Services
+                        </h3>
+
                     </div>
+
+
                     <div class="quick-services-grid">
-                        <a href="#" class="quick-service-card">
+
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <img src="thumbnails/upi_logo.png" alt="UPI" class="quick-service-img">
+
+                                <img
+                                    src="thumbnails/upi_logo.png"
+                                    alt="UPI"
+                                    class="quick-service-img"
+                                >
+
                             </div>
-                            <span class="quick-service-title">UPI Services</span>
+
+                            <span class="quick-service-title">
+                                UPI Services
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <rect
+                                        x="1"
+                                        y="4"
+                                        width="22"
+                                        height="16"
+                                        rx="2"
+                                    />
+
+                                    <line
+                                        x1="1"
+                                        y1="10"
+                                        x2="23"
+                                        y2="10"
+                                    />
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Card Controls</span>
+
+                            <span class="quick-service-title">
+                                Card Controls
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Update Limits</span>
+
+                            <span class="quick-service-title">
+                                Update Limits
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <rect
+                                        x="3"
+                                        y="11"
+                                        width="18"
+                                        height="11"
+                                        rx="2"
+                                        ry="2"
+                                    />
+
+                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Block / Unblock Card</span>
+
+                            <span class="quick-service-title">
+                                Block / Unblock Card
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><key x1="2" y1="12" x2="22" y2="12"/><path d="M21 2l-2 2m-2-2l2 2"/><circle cx="7" cy="12" r="3"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <circle
+                                        cx="7"
+                                        cy="12"
+                                        r="3"
+                                    />
+
+                                    <line
+                                        x1="2"
+                                        y1="12"
+                                        x2="22"
+                                        y2="12"
+                                    />
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Manage PIN</span>
+
+                            <span class="quick-service-title">
+                                Manage PIN
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <rect
+                                        x="2"
+                                        y="3"
+                                        width="20"
+                                        height="14"
+                                        rx="2"
+                                    />
+
+                                    <path d="M8 21h8"/>
+
+                                    <path d="M12 17v4"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Virtual Card</span>
+
+                            <span class="quick-service-title">
+                                Virtual Card
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <polyline points="17 1 21 5 17 9"/>
+
+                                    <path d="M3 11V9a4 4 0 0 1 4-4h14"/>
+
+                                    <polyline points="7 23 3 19 7 15"/>
+
+                                    <path d="M21 13v2a4 4 0 0 1-4 4H3"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Fund Transfer</span>
+
+                            <span class="quick-service-title">
+                                Fund Transfer
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+
+                                    <polyline points="14 2 14 8 20 8"/>
+
+                                    <line
+                                        x1="16"
+                                        y1="13"
+                                        x2="8"
+                                        y2="13"
+                                    />
+
+                                    <line
+                                        x1="16"
+                                        y1="17"
+                                        x2="8"
+                                        y2="17"
+                                    />
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Pay Bills</span>
+
+                            <span class="quick-service-title">
+                                Pay Bills
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Recharge</span>
+
+                            <span class="quick-service-title">
+                                Recharge
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+
+                                    <polyline points="7 10 12 15 17 10"/>
+
+                                    <line
+                                        x1="12"
+                                        y1="15"
+                                        x2="12"
+                                        y2="3"
+                                    />
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Statements</span>
+
+                            <span class="quick-service-title">
+                                Statements
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>
+
+                                    <path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Cheque Services</span>
+
+                            <span class="quick-service-title">
+                                Cheque Services
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+
+                                    <circle
+                                        cx="9"
+                                        cy="7"
+                                        r="4"
+                                    />
+
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Beneficiaries</span>
+
+                            <span class="quick-service-title">
+                                Beneficiaries
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/><line x1="12" y1="9" x2="12" y2="15"/><line x1="9" y1="12" x2="15" y2="12"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2z"/>
+
+                                    <line
+                                        x1="12"
+                                        y1="9"
+                                        x2="12"
+                                        y2="15"
+                                    />
+
+                                    <line
+                                        x1="9"
+                                        y1="12"
+                                        x2="15"
+                                        y2="12"
+                                    />
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Open Deposit</span>
+
+                            <span class="quick-service-title">
+                                Open Deposit
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 2v6h-6"/><path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <path d="M21.5 2v6h-6"/>
+
+                                    <path d="M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Autopay</span>
+
+                            <span class="quick-service-title">
+                                Autopay
+                            </span>
+
                         </a>
 
-                        <a href="#" class="quick-service-card">
+
+                        <a
+                            href="#"
+                            class="quick-service-card"
+                        >
+
                             <div class="quick-service-icon">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    aria-hidden="true"
+                                >
+
+                                    <circle
+                                        cx="12"
+                                        cy="12"
+                                        r="3"
+                                    />
+
+                                    <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+
+                                </svg>
+
                             </div>
-                            <span class="quick-service-title">Account Services</span>
+
+                            <span class="quick-service-title">
+                                Account Services
+                            </span>
+
                         </a>
+
                     </div>
+
                 </section>
 
-            </div><!-- /main-column -->
-        </div><!-- /dash-grid -->
+            </div>
+
+        </div>
+
     </main>
 
+
     <!-- ===== FOOTER ===== -->
+
     <footer class="dash-footer">
+
         <div class="dash-footer-inner">
-            <a href="startingPage.html" class="dash-footer-home">← Back to Home</a>
-            <span class="dash-footer-copy">&copy; 2026 Srijian Bank. All rights reserved.</span>
+
+            <a
+                href="startingPage.html"
+                class="dash-footer-home"
+            >
+                ← Back to Home
+            </a>
+
+            <span class="dash-footer-copy">
+                &copy; 2026 Srijian Bank. All rights reserved.
+            </span>
+
         </div>
+
     </footer>
 
+
+    <script src="userdashboard.js"></script>
+
 </body>
+
 </html>

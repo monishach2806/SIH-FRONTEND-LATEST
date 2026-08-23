@@ -1,69 +1,873 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Admin Dashboard | Srijian Bank</title>
-	<link rel="stylesheet" href="admin.css">
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Admin Dashboard | Srijian Bank</title>
+
+    <link
+        rel="stylesheet"
+        href="admin.css"
+    >
+
 </head>
+
+
 <body>
-	<header class="admin-topbar">
-		<a class="admin-brand" href="startingPage.html">
-			<img src="logo.jpeg" alt="Srijian Bank logo">
-			<span><strong>Srijian Bank</strong><small>Administration workspace</small></span>
-		</a>
-		<div class="admin-session"><span class="status-dot"></span><span>System online</span><a href="startingPage.html">Exit dashboard</a></div>
-	</header>
 
-	<main>
-		<section class="admin-welcome" aria-labelledby="dashboard-title">
-			<div><span class="eyebrow">Monday, 22 August 2026</span><h1 id="dashboard-title">Good morning, Admin.</h1><p>Keep an eye on the bank, act on what matters, and keep every customer moving forward.</p></div>
-			<a class="primary-action" href="#quick-actions">Open quick actions <span>↗</span></a>
-		</section>
 
-		<section class="metric-grid" aria-label="Banking overview">
-			<article class="metric-card"><span class="metric-label">Active customers</span><strong>24,891</strong><small class="positive">+8.4% this month</small></article>
-			<article class="metric-card"><span class="metric-label">Pending reviews</span><strong>186</strong><small class="attention">14 need attention today</small></article>
-			<article class="metric-card"><span class="metric-label">Loans disbursed</span><strong>INR 8.42M</strong><small class="positive">+12.7% this month</small></article>
-			<article class="metric-card"><span class="metric-label">Service uptime</span><strong>99.98%</strong><small class="positive">All systems healthy</small></article>
-		</section>
+    <!-- ================= TOP BAR ================= -->
 
-		<div class="admin-grid">
-			<section class="operations-panel" aria-labelledby="operations-title">
-				<div class="section-heading"><div><span class="eyebrow">Daily operations</span><h2 id="operations-title">Review and manage</h2></div><span class="panel-date">Updated 09:42</span></div>
-				<div class="operation-list">
-					<a class="operation-item" href="#customers"><span class="operation-icon">+</span><span><strong>Customer accounts</strong><small>Review profiles, KYC, and account status</small></span><span class="operation-count">12 new</span><span class="operation-arrow">→</span></a>
-					<a class="operation-item" href="#loans"><span class="operation-icon">↗</span><span><strong>Loan applications</strong><small>Check applications waiting for approval</small></span><span class="operation-count warning-count">14 pending</span><span class="operation-arrow">→</span></a>
-					<a class="operation-item" href="#cards"><span class="operation-icon">▭</span><span><strong>Card management</strong><small>Issue, block, and review card activity</small></span><span class="operation-count">8 alerts</span><span class="operation-arrow">→</span></a>
-					<a class="operation-item" href="#reports"><span class="operation-icon">=</span><span><strong>Reports and insights</strong><small>View performance and compliance reports</small></span><span class="operation-count">6 reports</span><span class="operation-arrow">→</span></a>
-				</div>
-			</section>
+    <header class="admin-topbar">
 
-			<aside class="admin-ai-column" aria-labelledby="admin-ai-title">
-				<div class="admin-ai-box">
-					<span class="ai-eyebrow">Admin support</span><h2 id="admin-ai-title">AI Assistance</h2><p>Ask for a summary, a report, or help finding a customer record.</p>
-					<div class="admin-ai-input"><input type="text" aria-label="Ask admin AI assistance" placeholder="Ask a question"><button type="button" aria-label="Send question">→</button></div>
-				</div>
-				<div class="security-note"><span class="shield-mark">✓</span><div><strong>Protected workspace</strong><small>Admin activity is monitored and secured.</small></div></div>
-			</aside>
-		</div>
+        <a
+            class="admin-brand"
+            href="startingPage.html"
+        >
 
-		<section class="activity-panel" aria-labelledby="activity-title">
-			<div class="section-heading"><div><span class="eyebrow">Live activity</span><h2 id="activity-title">Recent admin actions</h2></div><a class="view-link" href="#activity">View all activity <span>↗</span></a></div>
-			<div class="activity-table" role="table" aria-label="Recent admin actions">
-				<div class="activity-row activity-header" role="row"><span>Activity</span><span>Admin</span><span>Time</span><span>Status</span></div>
-				<div class="activity-row" role="row"><span><strong>Loan application reviewed</strong><small>Application #SL-20481</small></span><span>R. Mehta</span><span>09:38</span><span class="activity-status done">Completed</span></div>
-				<div class="activity-row" role="row"><span><strong>Card temporarily blocked</strong><small>Customer #CU-87342</small></span><span>A. Singh</span><span>09:31</span><span class="activity-status done">Completed</span></div>
-				<div class="activity-row" role="row"><span><strong>KYC document requested</strong><small>Customer #CU-87109</small></span><span>You</span><span>09:24</span><span class="activity-status waiting">Waiting</span></div>
-			</div>
-		</section>
+            <img
+                src="logo.jpeg"
+                alt="Srijian Bank logo"
+            >
 
-		<section class="quick-actions" id="quick-actions" aria-labelledby="actions-title">
-			<div class="section-heading"><div><span class="eyebrow">Shortcuts</span><h2 id="actions-title">Quick actions</h2></div></div>
-			<div class="quick-action-grid"><a href="#new-user">Add customer <span>+</span></a><a href="#report">Generate report <span>↗</span></a><a href="#broadcast">Send announcement <span>→</span></a><a href="#settings">System settings <span>⚙</span></a></div>
-		</section>
-	</main>
+            <span>
 
-	<footer class="admin-footer"><span>Srijian Bank Admin</span><span>Internal use only</span><a href="startingPage.html">Back to home ↗</a></footer>
+                <strong>
+                    Srijian Bank
+                </strong>
+
+                <small>
+                    Administration workspace
+                </small>
+
+            </span>
+
+        </a>
+
+
+        <div class="admin-session">
+
+            <span class="status-dot"></span>
+
+            <span>
+                System online
+            </span>
+
+            <a href="startingPage.html">
+                Exit dashboard
+            </a>
+
+        </div>
+
+    </header>
+
+
+
+    <main>
+
+
+        <!-- ================= WELCOME ================= -->
+
+        <section
+            class="admin-welcome"
+            aria-labelledby="dashboard-title"
+        >
+
+            <div>
+
+                <span class="eyebrow">
+                    Monday, 22 August 2026
+                </span>
+
+                <h1 id="dashboard-title">
+                    Good morning, Admin.
+                </h1>
+
+                <p>
+                    Keep an eye on the bank, act on what matters,
+                    and keep every customer moving forward.
+                </p>
+
+            </div>
+
+
+            <a
+                class="primary-action"
+                href="#quick-actions"
+            >
+
+                Open quick actions
+                <span>↗</span>
+
+            </a>
+
+        </section>
+
+
+
+        <!-- ================= METRICS ================= -->
+
+        <section
+            class="metric-grid"
+            aria-label="Banking overview"
+        >
+
+            <article class="metric-card">
+
+                <span class="metric-label">
+                    Active customers
+                </span>
+
+                <strong>
+                    24,891
+                </strong>
+
+                <small class="positive">
+                    +8.4% this month
+                </small>
+
+            </article>
+
+
+            <article class="metric-card">
+
+                <span class="metric-label">
+                    Pending reviews
+                </span>
+
+                <strong>
+                    186
+                </strong>
+
+                <small class="attention">
+                    14 need attention today
+                </small>
+
+            </article>
+
+
+            <article class="metric-card">
+
+                <span class="metric-label">
+                    Loans disbursed
+                </span>
+
+                <strong>
+                    INR 8.42M
+                </strong>
+
+                <small class="positive">
+                    +12.7% this month
+                </small>
+
+            </article>
+
+
+            <article class="metric-card">
+
+                <span class="metric-label">
+                    Service uptime
+                </span>
+
+                <strong>
+                    99.98%
+                </strong>
+
+                <small class="positive">
+                    All systems healthy
+                </small>
+
+            </article>
+
+        </section>
+
+
+
+        <!-- ================= ADMIN GRID ================= -->
+
+        <div class="admin-grid">
+
+
+            <!-- ================= OPERATIONS ================= -->
+
+            <section
+                class="operations-panel"
+                aria-labelledby="operations-title"
+            >
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            Daily operations
+                        </span>
+
+                        <h2 id="operations-title">
+                            Review and manage
+                        </h2>
+
+                    </div>
+
+
+                    <span class="panel-date">
+                        Updated 09:42
+                    </span>
+
+                </div>
+
+
+                <div class="operation-list">
+
+
+                    <a
+                        class="operation-item"
+                        href="#customers"
+                    >
+
+                        <span class="operation-icon">
+                            +
+                        </span>
+
+
+                        <span>
+
+                            <strong>
+                                Customer accounts
+                            </strong>
+
+                            <small>
+                                Review profiles, KYC, and account status
+                            </small>
+
+                        </span>
+
+
+                        <span class="operation-count">
+                            12 new
+                        </span>
+
+
+                        <span class="operation-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="operation-item"
+                        href="#loans"
+                    >
+
+                        <span class="operation-icon">
+                            ↗
+                        </span>
+
+
+                        <span>
+
+                            <strong>
+                                Loan applications
+                            </strong>
+
+                            <small>
+                                Check applications waiting for approval
+                            </small>
+
+                        </span>
+
+
+                        <span class="operation-count warning-count">
+                            14 pending
+                        </span>
+
+
+                        <span class="operation-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="operation-item"
+                        href="#cards"
+                    >
+
+                        <span class="operation-icon">
+                            ▭
+                        </span>
+
+
+                        <span>
+
+                            <strong>
+                                Card management
+                            </strong>
+
+                            <small>
+                                Issue, block, and review card activity
+                            </small>
+
+                        </span>
+
+
+                        <span class="operation-count">
+                            8 alerts
+                        </span>
+
+
+                        <span class="operation-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a
+                        class="operation-item"
+                        href="#reports"
+                    >
+
+                        <span class="operation-icon">
+                            =
+                        </span>
+
+
+                        <span>
+
+                            <strong>
+                                Reports and insights
+                            </strong>
+
+                            <small>
+                                View performance and compliance reports
+                            </small>
+
+                        </span>
+
+
+                        <span class="operation-count">
+                            6 reports
+                        </span>
+
+
+                        <span class="operation-arrow">
+                            →
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= BANK AI ================= -->
+
+            <aside
+                class="admin-ai-column"
+                aria-labelledby="admin-ai-title"
+            >
+
+                <div class="admin-ai-box">
+
+                    <span class="ai-eyebrow">
+                        Admin support
+                    </span>
+
+                    <h2 id="admin-ai-title">
+                        AI Assistance
+                    </h2>
+
+                    <p>
+                        Ask for a summary, a report, or help finding a customer record.
+                    </p>
+
+
+                    <div class="admin-ai-input">
+
+                        <input
+                            id="adminAiInput"
+                            type="text"
+                            aria-label="Ask admin AI assistance"
+                            placeholder="Ask a question"
+                        >
+
+
+                        <button
+                            id="adminAiButton"
+                            type="button"
+                            aria-label="Send question"
+                        >
+                            →
+                        </button>
+
+                    </div>
+
+
+                    <div id="adminAiResponse"></div>
+
+                </div>
+
+
+
+                <div class="security-note">
+
+                    <span class="shield-mark">
+                        ✓
+                    </span>
+
+
+                    <div>
+
+                        <strong>
+                            Protected workspace
+                        </strong>
+
+                        <small>
+                            Admin activity is monitored and secured.
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+
+
+        <!-- =====================================================
+             KYC APPLICATIONS
+        ====================================================== -->
+
+        <section
+            class="kyc-admin-section"
+            id="kyc-section"
+            aria-labelledby="kyc-title"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Compliance
+                    </span>
+
+                    <h2 id="kyc-title">
+                        KYC Applications
+                    </h2>
+
+                </div>
+
+
+                <span class="panel-date">
+                    Live
+                </span>
+
+            </div>
+
+
+            <div id="kycApplications">
+
+                <p>
+                    Loading KYC applications...
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ACTIVITY ================= -->
+
+        <section
+            class="activity-panel"
+            aria-labelledby="activity-title"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Live activity
+                    </span>
+
+                    <h2 id="activity-title">
+                        Recent admin actions
+                    </h2>
+
+                </div>
+
+
+                <a
+                    class="view-link"
+                    href="#activity"
+                >
+
+                    View all activity
+                    <span>↗</span>
+
+                </a>
+
+            </div>
+
+
+
+            <div
+                class="activity-table"
+                role="table"
+                aria-label="Recent admin actions"
+            >
+
+
+                <div
+                    class="activity-row activity-header"
+                    role="row"
+                >
+
+                    <span>
+                        Activity
+                    </span>
+
+                    <span>
+                        Admin
+                    </span>
+
+                    <span>
+                        Time
+                    </span>
+
+                    <span>
+                        Status
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    class="activity-row"
+                    role="row"
+                >
+
+                    <span>
+
+                        <strong>
+                            Loan application reviewed
+                        </strong>
+
+                        <small>
+                            Application #SL-20481
+                        </small>
+
+                    </span>
+
+
+                    <span>
+                        R. Mehta
+                    </span>
+
+
+                    <span>
+                        09:38
+                    </span>
+
+
+                    <span class="activity-status done">
+                        Completed
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    class="activity-row"
+                    role="row"
+                >
+
+                    <span>
+
+                        <strong>
+                            Card temporarily blocked
+                        </strong>
+
+                        <small>
+                            Customer #CU-87342
+                        </small>
+
+                    </span>
+
+
+                    <span>
+                        A. Singh
+                    </span>
+
+
+                    <span>
+                        09:31
+                    </span>
+
+
+                    <span class="activity-status done">
+                        Completed
+                    </span>
+
+                </div>
+
+
+
+                <div
+                    class="activity-row"
+                    role="row"
+                >
+
+                    <span>
+
+                        <strong>
+                            KYC document requested
+                        </strong>
+
+                        <small>
+                            Customer #CU-87109
+                        </small>
+
+                    </span>
+
+
+                    <span>
+                        You
+                    </span>
+
+
+                    <span>
+                        09:24
+                    </span>
+
+
+                    <span class="activity-status waiting">
+                        Waiting
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= QUICK ACTIONS ================= -->
+
+        <section
+            class="quick-actions"
+            id="quick-actions"
+            aria-labelledby="actions-title"
+        >
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="eyebrow">
+                        Shortcuts
+                    </span>
+
+                    <h2 id="actions-title">
+                        Quick actions
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-action-grid">
+
+                <a href="#new-user">
+                    Add customer
+                    <span>+</span>
+                </a>
+
+
+                <a href="#report">
+                    Generate report
+                    <span>↗</span>
+                </a>
+
+
+                <a href="#broadcast">
+                    Send announcement
+                    <span>→</span>
+                </a>
+
+
+                <a href="#settings">
+                    System settings
+                    <span>⚙</span>
+                </a>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="admin-footer">
+
+        <span>
+            Srijian Bank Admin
+        </span>
+
+
+        <span>
+            Internal use only
+        </span>
+
+
+        <a href="startingPage.html">
+            Back to home ↗
+        </a>
+
+    </footer>
+
+
+
+    <!-- ================= BANK AI JAVASCRIPT ================= -->
+
+    <script>
+
+        const input =
+            document.querySelector("#adminAiInput");
+
+
+        const button =
+            document.querySelector("#adminAiButton");
+
+
+        const responseBox =
+            document.querySelector("#adminAiResponse");
+
+
+        button.addEventListener(
+            "click",
+            async () => {
+
+                const message =
+                    input.value.trim();
+
+
+                if (!message) {
+                    return;
+                }
+
+
+                responseBox.innerText =
+                    "Thinking...";
+
+
+                try {
+
+                    const response =
+                        await fetch(
+                            "http://localhost:3000/api/ai/bank-chat",
+                            {
+
+                                method: "POST",
+
+                                headers: {
+                                    "Content-Type":
+                                        "application/json"
+                                },
+
+                                body: JSON.stringify({
+                                    message: message
+                                })
+
+                            }
+                        );
+
+
+                    const data =
+                        await response.json();
+
+
+                    if (data.success) {
+
+                        responseBox.innerText =
+                            data.response;
+
+                    } else {
+
+                        responseBox.innerText =
+                            data.message ||
+                            "Something went wrong.";
+
+                    }
+
+
+                } catch (error) {
+
+                    console.error(
+                        "Bank AI error:",
+                        error
+                    );
+
+
+                    responseBox.innerText =
+                        "Unable to connect to Bank AI.";
+
+                }
+
+            }
+        );
+
+
+        input.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (event.key === "Enter") {
+
+                    button.click();
+
+                }
+
+            }
+        );
+
+    </script>
+
+
+
+    <!-- ================= KYC JAVASCRIPT ================= -->
+
+    <script src="admin.js"></script>
+
+
 </body>
+
 </html>

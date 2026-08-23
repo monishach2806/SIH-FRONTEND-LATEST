@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Srijian Bank - KYC</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+        }
+
+        .kyc-container {
+            width: 100%;
+            max-width: 700px;
+            background: white;
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .kyc-container h1 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .field {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .field-wide {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            margin-bottom: 7px;
+            font-weight: 600;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+
+        textarea {
+            min-height: 90px;
+            resize: vertical;
+        }
+
+        .submit-button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            background: #111827;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .submit-button:hover {
+            opacity: 0.9;
+        }
+
+        .status-message {
+            margin-top: 18px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        @media (max-width: 600px) {
+
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .field-wide {
+                grid-column: auto;
+            }
+
+            .kyc-container {
+                padding: 22px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div class="kyc-container">
+
+        <h1>KYC Verification</h1>
+
+        <p class="subtitle">
+            Submit your identity details to complete your KYC.
+        </p>
+
+
+        <form id="kycForm">
+
+            <div class="form-grid">
+
+
+                <!-- Document Type -->
+
+                <div class="field">
+
+                    <label for="documentType">
+                        Document Type
+                    </label>
+
+                    <select
+                        id="documentType"
+                        required
+                    >
+
+                        <option value="">
+                            Select document
+                        </option>
+
+                        <option value="Aadhaar">
+                            Aadhaar
+                        </option>
+
+                        <option value="PAN">
+                            PAN
+                        </option>
+
+                        <option value="Passport">
+                            Passport
+                        </option>
+
+                        <option value="Driving License">
+                            Driving License
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Document Number -->
+
+                <div class="field">
+
+                    <label for="documentNumber">
+                        Document Number
+                    </label>
+
+                    <input
+                        type="text"
+                        id="documentNumber"
+                        placeholder="Enter document number"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Full Name -->
+
+                <div class="field field-wide">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter full name as on document"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Date of Birth -->
+
+                <div class="field">
+
+                    <label for="dateOfBirth">
+                        Date of Birth
+                    </label>
+
+                    <input
+                        type="date"
+                        id="dateOfBirth"
+                    >
+
+                </div>
+
+
+                <!-- City -->
+
+                <div class="field">
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Enter city"
+                    >
+
+                </div>
+
+
+                <!-- State -->
+
+                <div class="field">
+
+                    <label for="state">
+                        State
+                    </label>
+
+                    <input
+                        type="text"
+                        id="state"
+                        placeholder="Enter state"
+                    >
+
+                </div>
+
+
+                <!-- Postal Code -->
+
+                <div class="field">
+
+                    <label for="postalCode">
+                        Postal Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="postalCode"
+                        placeholder="6-digit PIN code"
+                        pattern="[0-9]{6}"
+                    >
+
+                </div>
+
+
+                <!-- Address -->
+
+                <div class="field field-wide">
+
+                    <label for="address">
+                        Address
+                    </label>
+
+                    <textarea
+                        id="address"
+                        placeholder="Enter residential address"
+                    ></textarea>
+
+                </div>
+
+
+            </div>
+
+
+            <button
+                type="submit"
+                class="submit-button"
+            >
+                Submit KYC
+            </button>
+
+
+            <div
+                id="statusMessage"
+                class="status-message"
+            ></div>
+
+        </form>
+
+    </div>
+
+
+    <script src="kyc.js"></script>
+
+</body>
+
+</html>
