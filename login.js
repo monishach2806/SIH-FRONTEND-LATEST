@@ -30,7 +30,7 @@ if (!loginButton) {
 
             const response =
                 await fetch(
-                    "http://localhost:3000/api/customers/login",
+                    "https://sih-project-w1a6.onrender.com/api/customers/login",
                     {
                         method: "POST",
 

@@ -108,7 +108,7 @@ kycForm.addEventListener("submit", async (event) => {
 
         const response =
             await fetch(
-                "http://localhost:3000/api/kyc",
+                "https://sih-project-w1a6.onrender.com/api/kyc",
                 {
 
                     method: "POST",

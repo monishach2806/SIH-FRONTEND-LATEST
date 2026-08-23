@@ -62,7 +62,7 @@ if (!form) {
         try {
 
             const response = await fetch(
-                "http://localhost:3000/api/customers",
+                "https://sih-project-w1a6.onrender.com/api/customers",
                 {
                     method: "POST",
 
