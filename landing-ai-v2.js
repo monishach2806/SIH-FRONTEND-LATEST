@@ -69,7 +69,7 @@ if (aiInput && aiButton) {
             console.error("AI error:", error);
 
             answerBox.textContent =
-                "ERROR: ${error.message}";
+                `ERROR: ${error.message}`;
 
         } finally {
 
@@ -88,4 +88,6 @@ if (aiInput && aiButton) {
 
     });
 }
+
+
 
