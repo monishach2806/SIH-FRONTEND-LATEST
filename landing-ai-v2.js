@@ -1,4 +1,4 @@
-const aiInput = document.querySelector('input[aria-label="Ask AI assistance"]');
+ï»¿const aiInput = document.querySelector('input[aria-label="Ask AI assistance"]');
 const aiButton = document.querySelector('button[aria-label="Send question"]');
 
 if (aiInput && aiButton) {
@@ -85,7 +85,7 @@ if (aiInput && aiButton) {
 .replace(/\*\*(.*?)\*\*/g, "$1")
 .replace(/\*(.*?)\*/g, "$1")
 .replace(/^---+$/gm, "")
-.replace(/^\s*[-*]\s+/gm, "• ")
+.replace(/^\s*[-*]\s+/gm, "- ")
 .replace(/\n{3,}/g, "\n\n")
 .trim();
 
@@ -113,6 +113,7 @@ if (aiInput && aiButton) {
 
     });
 }
+
 
 
 
