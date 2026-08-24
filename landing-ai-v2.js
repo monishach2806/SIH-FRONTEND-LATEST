@@ -53,7 +53,7 @@ if (aiInput && aiButton) {
         name: "Savings Account",
         type: "Savings",
         description: "A standard savings account for personal banking.",
-        eligibility: "Available to eligible individual customers."
+        eligibility: "Available to eligible individual customers.",`r`n        opening_steps: ["Provide your basic personal information.", "Submit the required identity and address proof documents.", "Complete KYC verification.", "Review and confirm the account details.", "Once verification is completed, the savings account can be opened."]
     },
     {
         name: "Current Account",
@@ -107,6 +107,7 @@ if (aiInput && aiButton) {
 
     });
 }
+
 
 
 
