@@ -48,7 +48,26 @@ if (aiInput && aiButton) {
                     body: JSON.stringify({
                         message: message,
                         customerProfile: {},
-                        products: []
+                        products: [
+    {
+        name: "Savings Account",
+        type: "Savings",
+        description: "A standard savings account for personal banking.",
+        eligibility: "Available to eligible individual customers."
+    },
+    {
+        name: "Current Account",
+        type: "Current",
+        description: "A current account designed for regular banking transactions.",
+        eligibility: "Available to eligible customers."
+    },
+    {
+        name: "Fixed Deposit",
+        type: "Deposit",
+        description: "A fixed-term deposit product for customers who want to keep money invested for a defined period.",
+        eligibility: "Available to eligible customers."
+    }
+]
                     })
                 }
             );
@@ -88,6 +107,7 @@ if (aiInput && aiButton) {
 
     });
 }
+
 
 
 
