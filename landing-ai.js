@@ -69,7 +69,7 @@ if (aiInput && aiButton) {
             console.error("AI error:", error);
 
             answerBox.textContent =
-                "AI service is currently unavailable. Please try again.";
+                "ERROR: ${error.message}";
 
         } finally {
 
@@ -88,3 +88,4 @@ if (aiInput && aiButton) {
 
     });
 }
+
