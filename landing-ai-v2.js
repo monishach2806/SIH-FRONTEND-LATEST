@@ -47,7 +47,7 @@ if (aiInput && aiButton) {
                     },
                     body: JSON.stringify({
                         message: message,
-                        customer_profile: {},
+                        customerProfile: {},
                         products: []
                     })
                 }
@@ -88,6 +88,7 @@ if (aiInput && aiButton) {
 
     });
 }
+
 
 
 
