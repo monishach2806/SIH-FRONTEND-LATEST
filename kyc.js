@@ -108,7 +108,7 @@ kycForm.addEventListener("submit", async (event) => {
 
         const response =
             await fetch(
-                "https://sih-project-w1a6.onrender.com/api/kyc",
+                "https://sih-project-backend-joar.onrender.com/api/kyc",
                 {
 
                     method: "POST",
@@ -218,3 +218,4 @@ kycForm.addEventListener("submit", async (event) => {
     }
 
 });
+

@@ -62,7 +62,7 @@ if (!form) {
         try {
 
             const response = await fetch(
-                "https://sih-project-w1a6.onrender.com/api/customers",
+                "https://sih-project-backend-joar.onrender.com/api/customers",
                 {
                     method: "POST",
 
@@ -147,3 +147,4 @@ if (!form) {
 
     });
 }
+

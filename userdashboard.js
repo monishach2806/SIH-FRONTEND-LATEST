@@ -77,7 +77,7 @@ if (aiButton && aiInput) {
 
                 const response =
                     await fetch(
-                        "https://sih-project-w1a6.onrender.com/api/ai/chat",
+                        "https://sih-project-backend-joar.onrender.com/api/ai/chat",
                         {
 
                             method: "POST",
@@ -262,7 +262,7 @@ async function loadInsights() {
 
         const response =
             await fetch(
-                `https://sih-project-w1a6.onrender.com/api/customers/${customerId}/insights`
+                `https://sih-project-backend-joar.onrender.com/api/customers/${customerId}/insights`
             );
 
 
@@ -370,7 +370,7 @@ async function loadProducts() {
 
         const response =
             await fetch(
-                "https://sih-project-w1a6.onrender.com/api/products"
+                "https://sih-project-backend-joar.onrender.com/api/products"
             );
 
 
@@ -482,7 +482,7 @@ async function loadCustomerProfile() {
 
         const response =
             await fetch(
-                `https://sih-project-w1a6.onrender.com/api/customers/${customerId}/profile`
+                `https://sih-project-backend-joar.onrender.com/api/customers/${customerId}/profile`
             );
 
 
@@ -664,7 +664,7 @@ async function loadAccounts() {
 
         const response =
             await fetch(
-                `https://sih-project-w1a6.onrender.com/api/customers/${customerId}/profile`
+                `https://sih-project-backend-joar.onrender.com/api/customers/${customerId}/profile`
             );
 
 

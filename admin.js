@@ -12,7 +12,7 @@ async function loadKYC() {
 
         const response =
             await fetch(
-                "https://sih-project-w1a6.onrender.com/api/kyc"
+                "https://sih-project-backend-joar.onrender.com/api/kyc"
             );
 
 
@@ -307,7 +307,7 @@ async function updateKYCStatus(
 
         const response =
             await fetch(
-                `https://sih-project-w1a6.onrender.com/api/kyc/${kycId}/status`,
+                `https://sih-project-backend-joar.onrender.com/api/kyc/${kycId}/status`,
                 {
 
                     method: "PATCH",
@@ -380,3 +380,4 @@ async function updateKYCStatus(
 
 
 loadKYC();
+
